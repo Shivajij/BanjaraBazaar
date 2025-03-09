@@ -1,7 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const Login = () => {
+  
+  const notify = () => {
+    toast.success("Login Success!", { 
+    });
+  };
+
   return (
     <div className="auth-container">
       <div className="auth-box">
@@ -13,7 +21,10 @@ const Login = () => {
           <div className="form-group">
             <input type="password" placeholder="Password" />
           </div>
-          <button className="btn-primary">Login</button>
+          <button type="button" className="btn-primary" onClick={notify}>
+            Login
+          </button>
+          <ToastContainer /> 
         </form>
         <p>
           Don't have an account? <Link to="/register">Register</Link>

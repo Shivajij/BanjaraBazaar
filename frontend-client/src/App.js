@@ -8,7 +8,7 @@ import Register from './components/Register';
 import Cart from './components/Cart';
 import Payment from './components/Payment';
 import Order from './components/Order';
-import './styles.css';
+import './css/styles.css';
 
 function App() {
   return (

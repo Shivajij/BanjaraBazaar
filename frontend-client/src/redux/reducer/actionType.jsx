@@ -1,0 +1,11 @@
+export const actiontype = {
+    LOADING: "LOADING",
+    LOADED: "LOADED",
+
+    ALERT_SUCCESS: "ALERT_SUCCESS",
+    ALERT_ERORR: "ALERT_ERORR",
+
+    LOGIN_SUCCESS: "LOGIN_SUCCESS",
+    LOGIN_ERROR: "LOGIN_ERROR",
+    LOGOUT: 'LOGOUT',
+}
